@@ -1,0 +1,57 @@
+<template class="page" id="account-page">
+
+    <div id="title_bar">
+        <!-- Return button -->
+        <button id="btn_back" class="button"><i class="bi bi-arrow-left"></i></button>
+    
+        <!-- Title -->
+        <h2 id="name-field"></h2>
+    </div>
+
+    <div id="account-fields-parent">
+        <div id="account-fields">
+            <div class="account-field-div" id="account-link-div">
+                <label>Link : </label>
+                <a href="#" id="link-field"></a>
+                <i class="bi bi-clipboard" id="btn_copy_link"></i>
+            </div>
+            <div class="account-field-div" id="account-username-div">
+                <label>Username : </label>
+                <span id="username-field"></span>
+                <i class="bi bi-clipboard" id="btn_copy_username"></i>
+            </div>
+            <div class="account-field-div">
+                <label>Password : </label>
+                <span id="password-field"></span>
+                <i class="bi bi-clipboard" id="btn_copy_password"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="account-btns">
+        <button class="button big-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash"></i></button>
+        <button id="btn_edit" class="button big-btn"><i class="bi bi-pencil"></i></button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Are you sure you want to delete this account ? This action cannot be undone
+                </div>
+                <div class="modal-footer">
+                <button id="btn_delete" class="button big-btn" data-bs-dismiss="modal" data-bs-target="#exampleModal" ><i class="bi bi-trash"></i></button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- END OF MODAL -->
+
+    </div>
+
+</template>
